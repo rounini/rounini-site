@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rounini — Support</title>
+<style>
+  :root {
+    --bg: #FAF6EF; --surface: #FFFFFF; --border: #EDE3DC;
+    --text: #2E2622; --muted: #8A7B72; --accent: #C97540;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1614; --surface: #241F1C; --border: #3A322D;
+      --text: #F0E9E4; --muted: #A89A91; --accent: #E8956B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 20px 80px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 32px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0 0 36px; font-size: 17px; }
+  h2 { font-size: 20px; margin: 40px 0 14px; letter-spacing: -0.01em; }
+  .faq {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 4px 20px; margin: 0 0 14px;
+  }
+  .faq h3 { font-size: 16px; margin: 18px 0 6px; }
+  .faq p { margin: 0 0 16px; color: var(--muted); }
+  .contact {
+    background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent); border-radius: 10px;
+    padding: 18px 20px; margin: 0 0 8px;
+  }
+  .contact p { margin: 0; }
+  ul { padding-left: 22px; } li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rounini</h1>
+  <p class="tagline">A baby feeding tracker. Your log, in your own private account.</p>
+
+  <h2>Getting help</h2>
+  <div class="contact">
+    <p>Questions, bugs, or feature requests: <a href="mailto:rounini.app@gmail.com">rounini.app@gmail.com</a></p>
+  </div>
+
+  <h2>What Rounini tracks</h2>
+  <ul>
+    <li><strong>Feeding</strong> — a breastfeeding timer for left, right, or both sides, plus quick bottle and formula entries in oz or ml</li>
+    <li><strong>Diapers</strong> — one tap for wet, dirty, or both</li>
+    <li><strong>Sleep</strong> — start and stop a nap or night-sleep timer</li>
+    <li><strong>Growth</strong> — weight, height, and head circumference in your preferred units</li>
+    <li><strong>Home</strong> — today's timeline across every category, with feed and diaper counts and total sleep</li>
+  </ul>
+
+  <h2>Common questions</h2>
+
+  <div class="faq">
+    <h3>Do I need an account?</h3>
+    <p>Yes. Rounini signs you in with an email address and password so your log is stored against your account rather than only on one phone.</p>
+
+    <h3>What happens if I delete the app or change phone?</h3>
+    <p>Nothing is lost. Install Rounini on the new phone, sign in with the same email, and your entries come back.</p>
+
+    <h3>Can my partner and I share one baby's log?</h3>
+    <p>Not yet. Each account has its own separate log, so signing in on two phones with the <em>same</em> account is currently the only way to see the same entries. Shared access for two caregivers with their own accounts is planned.</p>
+
+    <h3>I started a feed or sleep timer and closed the app. Did I lose it?</h3>
+    <p>No. Running timers are saved as they happen, so an in-progress feed or sleep survives closing the app or restarting your phone. Reopen Rounini and it will still be counting.</p>
+
+    <h3>I forgot my password.</h3>
+    <p>On the sign-in screen, use the password reset option. Firebase sends a reset link to your email address.</p>
+
+    <h3>How do I delete everything?</h3>
+    <p><strong>Settings → Reset all data</strong> clears the baby profile and every entry. <strong>Settings → Delete account</strong> goes further and permanently removes your account along with all of its data. Both are irreversible, and there is no backup to restore from.</p>
+
+    <h3>Who can see my baby's data?</h3>
+    <p>Only you, signed in to your account. The database rules reject any request from a different account, and nothing is shared with advertisers or sold. Full details are in the <a href="./privacy.html">privacy policy</a>.</p>
+
+    <h3>Is Rounini medical advice?</h3>
+    <p>No. Rounini is a logbook to help you remember what happened and when. It does not diagnose anything or offer medical guidance. Talk to your pediatrician about anything concerning your baby's feeding, sleep, or growth.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>Rounini contains no analytics, no advertising, and no tracking. What is stored, where, and how to delete it is set out in the <a href="./privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> · Rounini — Baby Feeding Tracker
+  </footer>
+</main>
+</body>
+</html>
